@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
+  /* max-width: 1500px;
+  margin: 0 auto; */
   padding: 24px;
   h1 {
     font-weight: 500;
@@ -10,7 +12,7 @@ export const Wrapper = styled.div`
 export const MainWrapper = styled.div`
   margin-top: 40px;
   display: flex;
-  gap: 20px;
+  gap: 40px;
 `;
 
 export const SelectionsWrapper = styled.div`
@@ -22,4 +24,7 @@ export const SelectionsWrapper = styled.div`
 
 export const DataWrapper = styled.div`
   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 `;

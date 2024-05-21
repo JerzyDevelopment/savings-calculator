@@ -1,5 +1,5 @@
 import { Select, SelectWrapper, Wrapper } from "./styles";
-import { config } from "../../config";
+import { config } from "../../../config";
 
 interface iProps {
   setType: React.Dispatch<React.SetStateAction<string>>;

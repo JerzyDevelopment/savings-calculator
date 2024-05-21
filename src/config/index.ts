@@ -1,4 +1,12 @@
-export const config = {
+export interface iConfigData {
+  lowerVariable: number;
+  higherVariable: number;
+  risk: number;
+}
+
+export const config: {
+  [key: string]: iConfigData;
+} = {
   "High-Yield Savings Account": {
     lowerVariable: 0.5,
     higherVariable: 1,
