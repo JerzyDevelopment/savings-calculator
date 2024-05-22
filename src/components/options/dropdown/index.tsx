@@ -1,24 +1,22 @@
 import { Select, SelectWrapper, Wrapper } from "./styles";
-import { config } from "../../../config";
-
 interface iProps {
+  label: string;
   setType: React.Dispatch<React.SetStateAction<string>>;
+  options: string[];
 }
 
-export default function Dropdown({ setType }: iProps) {
-  const allOptions = Object.keys(config);
-
+export default function Dropdown({ label, setType, options }: iProps) {
   return (
     <Wrapper>
-      <label>Type of Savings</label>
+      <label>{label}</label>
       <SelectWrapper>
         <Select
           onChange={(e) => {
             setType(e.target.value);
           }}
         >
-          {allOptions &&
-            allOptions.map((el) => {
+          {options &&
+            options.map((el) => {
               return <option key={el}>{el}</option>;
             })}
         </Select>

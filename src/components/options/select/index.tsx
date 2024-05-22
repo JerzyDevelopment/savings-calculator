@@ -2,24 +2,24 @@ import React from "react";
 import { InnerWrapper, SelectWrapper, Wrapper } from "./styles";
 
 interface iProps {
-  timeFrame: string;
-  setTimeFrame: React.Dispatch<React.SetStateAction<string>>;
+  repeat: string;
+  setRepeat: React.Dispatch<React.SetStateAction<string>>;
 }
 
-export default function Select({ timeFrame, setTimeFrame }: iProps) {
+export default function Select({ repeat, setRepeat }: iProps) {
   const handleChange = () => {
-    if (timeFrame === "monthly") {
-      setTimeFrame("yearly");
+    if (repeat === "monthly") {
+      setRepeat("yearly");
     } else {
-      setTimeFrame("monthly");
+      setRepeat("monthly");
     }
   };
 
   return (
     <Wrapper>
-      <label>Savings Time Frame</label>
+      <label>Savings Contributed Repeat</label>
       <SelectWrapper>
-        <InnerWrapper timeframe={timeFrame} onClick={handleChange}>
+        <InnerWrapper repeat={repeat} onClick={handleChange}>
           <p>Monthly</p>
           <div />
           <p>Yearly</p>

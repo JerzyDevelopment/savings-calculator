@@ -72,9 +72,9 @@ export const config: {
     higherVariable: 7,
     risk: 30,
   },
-  Cryptocurrency: {
-    lowerVariable: 1,
-    higherVariable: 10000,
-    risk: 90,
-  },
+  // Cryptocurrency: {
+  //   lowerVariable: 1,
+  //   higherVariable: 1000,
+  //   risk: 90,
+  // },
 };

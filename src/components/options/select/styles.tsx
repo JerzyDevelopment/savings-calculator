@@ -16,7 +16,7 @@ export const SelectWrapper = styled.div`
 `;
 
 interface iProps {
-  timeframe: string;
+  repeat: string;
 }
 
 export const InnerWrapper = styled.div<iProps>`
@@ -26,6 +26,7 @@ export const InnerWrapper = styled.div<iProps>`
   border-radius: 14px;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 
   p {
     position: relative;
@@ -51,7 +52,7 @@ export const InnerWrapper = styled.div<iProps>`
     border-radius: 14px;
     top: 0;
     transition: transform 0.3s ease-in-out;
-    transform: ${({ timeframe }) =>
-      timeframe === "monthly" ? "translateX(0)" : "translateX(100%)"};
+    transform: ${({ repeat }) =>
+      repeat === "monthly" ? "translateX(0)" : "translateX(100%)"};
   }
 `;
