@@ -42,8 +42,8 @@ export default function Graph({ data }: iProps) {
         {
           label: "High",
           data: data.map((item) => item.higherVariable),
-          backgroundColor: "#6D3FCA",
-          hoverBackgroundColor: "#6D3FCA",
+          backgroundColor: "#35C769",
+          hoverBackgroundColor: "#35C769",
           barPercentage: 0.5, // Adjust bar percentage for spacing
           categoryPercentage: 0.5, // Adjust category percentage for spacing
           order: 1, // Draw this dataset first
@@ -51,8 +51,8 @@ export default function Graph({ data }: iProps) {
         {
           label: "Low",
           data: data.map((item) => item.lowerVariable),
-          backgroundColor: "#35C769",
-          hoverBackgroundColor: "#35C769",
+          backgroundColor: "#6D3FCA",
+          hoverBackgroundColor: "#6D3FCA",
           barPercentage: 0.5, // Adjust bar percentage for spacing
           categoryPercentage: 0.5, // Adjust category percentage for spacing
           order: 0, // Draw this dataset second, so it appears in front
