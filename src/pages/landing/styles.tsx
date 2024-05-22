@@ -3,12 +3,19 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   /* max-width: 1500px;
   margin: 0 auto; */
-  padding: 24px;
+  padding: 16px 24px;
   min-height: 100vh;
   max-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
+  img {
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    width: 70px;
+  }
   h1 {
     font-weight: 500;
     @media (max-width: 550px) {
@@ -16,12 +23,17 @@ export const Wrapper = styled.div`
     }
   }
   @media (max-width: 550px) {
-    padding: 24px 14px;
+    padding: 0 14px 24px;
   }
 `;
 
+export const Top = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
 export const MainWrapper = styled.div`
-  margin-top: 40px;
+  margin-top: 20px;
   display: flex;
   gap: 40px;
   flex-grow: 1;
@@ -80,7 +92,7 @@ export const BottomText = styled.div`
     font-size: 14px;
 
     @media (max-width: 450px) {
-      font-size: 10px;
+      font-size: 12px;
     }
 
     b {

@@ -4,6 +4,7 @@ import {
   DataWrapper,
   MainWrapper,
   SelectionsWrapper,
+  Top,
   Wrapper,
 } from "./styles";
 import Dropdown from "../../components/options/dropdown";
@@ -12,6 +13,7 @@ import Select from "../../components/options/select";
 import Stats from "../../components/stats";
 import { config, iConfigData } from "../../config";
 import Graph from "../../components/graph";
+import { img } from "../../assets";
 
 interface iFinalObj {
   year: number;
@@ -106,7 +108,10 @@ export default function LandingPage() {
 
   return (
     <Wrapper>
-      <h1>Savings Calculator</h1>
+      <Top>
+        <img src={img.logo} />
+        <h1>Savings Calculator</h1>
+      </Top>
       <MainWrapper>
         <SelectionsWrapper>
           <Dropdown
