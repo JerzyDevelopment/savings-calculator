@@ -72,7 +72,9 @@ export default function Graph({ data }: iProps) {
                 label += ": £";
               }
               if (context.parsed.y !== null) {
-                label += context.parsed.y;
+                label += new Intl.NumberFormat().format(
+                  Number(context.parsed.y)
+                );
               }
               return label;
             },

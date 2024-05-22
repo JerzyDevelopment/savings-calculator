@@ -80,7 +80,7 @@ export default function LandingPage() {
 
       increases.push(increase);
 
-      totalMoney = newSum;
+      totalMoney = newSum + savingPerYear;
 
       const dataObj = {
         year: i + 1,
