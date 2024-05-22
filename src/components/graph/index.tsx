@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import { useRef, useEffect } from "react";
 import { Bar } from "react-chartjs-2";
 import {
   Chart,
@@ -66,7 +66,7 @@ export default function Graph({ data }: iProps) {
       plugins: {
         tooltip: {
           callbacks: {
-            label: function (context) {
+            label: function (context: any) {
               let label = context.dataset.label || "";
               if (label) {
                 label += ": £";
@@ -95,7 +95,7 @@ export default function Graph({ data }: iProps) {
           stacked: false, // Ensure bars start from zero
           ticks: {
             beginAtZero: true,
-            callback: function (value) {
+            callback: function (value: any) {
               return "£" + value;
             },
           },
