@@ -9,5 +9,6 @@ export const Wrapper = styled.div`
 
   canvas {
     width: 100%;
+    max-height: 500px;
   }
 `;
